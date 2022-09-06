@@ -1,3 +1,5 @@
+package dp;
+
 //O(NxM)
 public class LCSUsingMemoization {
     static int findLCS(String str1, String str2, int i, int j, int[][] dp) {

@@ -1,10 +1,12 @@
-import java.sql.Array;
-import java.util.*;
-import java.util.stream.Collectors;
+package dp;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 
 public class NextPermutationNaive {
     public static void main(String[] args) {
-        int a[] = { 2, 3,1};
+        int[] a = {2, 3, 1};
         List<Integer> outputList = getNextPermutation(a);
         System.out.println(outputList);
     }
@@ -41,7 +43,7 @@ public class NextPermutationNaive {
         return permutationList;
     }
 
-    private static void recurssivePermute(int a[], int index, List<List<Integer>> permutationList) {
+    private static void recurssivePermute(int[] a, int index, List<List<Integer>> permutationList) {
         if (index == a.length) {
             List<Integer> list = new ArrayList<>();
             for (int i : a) {

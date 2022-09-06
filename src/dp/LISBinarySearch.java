@@ -1,3 +1,5 @@
+package dp;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -5,7 +7,7 @@ import java.util.List;
 //Won't return the list but will return the size of lis.
 public class LISBinarySearch {
     public static void main(String[] args) {
-        int arr[] = {0, 1, 0, 3, 2, 3};
+        int[] arr = {0, 1, 0, 3, 2, 3};
         //int arr[] = {10, 9, 2, 5, 3, 7, 101, 18};
         System.out.println(findLIS(arr));
 //        System.out.println(findNextLargest(18, Arrays.stream(arr).boxed().collect(Collectors.toList()), 0, arr.length - 1));
@@ -21,9 +23,7 @@ public class LISBinarySearch {
                 if (i <= lis.get(index)) {
                     lis.remove(index);
                     lis.add(index, i);
-                }
-                else
-                {
+                } else {
                     lis.add(i);
                 }
             }

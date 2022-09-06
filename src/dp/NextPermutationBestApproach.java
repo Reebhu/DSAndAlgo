@@ -1,9 +1,11 @@
-import java.util.Arrays;
+package dp;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class NextPermutationBestApproach {
     public static void main(String[] args) {
-        ArrayList<Integer> inputList =new ArrayList<>(Arrays.asList(3,2,1));
+        ArrayList<Integer> inputList = new ArrayList<>(Arrays.asList(3, 2, 1));
         ArrayList<Integer> outputList = getNextPermutation(inputList);
         System.out.println(outputList);
 
