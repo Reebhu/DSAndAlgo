@@ -6,9 +6,9 @@ public class NoOFSubsetsSumK {
     static int count = 0;
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 2, 3};
+        int[] arr = {1, 1, 1};
 
-        int k = 3;
+        int k = 2;
 
         int[][] dp = new int[arr.length][k + 1];
         Arrays.stream(dp).forEach(a -> Arrays.fill(a, -1));
