@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaDocConfiguration">
+    <GENERAL>
+      <MODE>UPDATE</MODE>
+      <OVERRIDDEN_METHODS>false</OVERRIDDEN_METHODS>
+      <SPLITTED_CLASS_NAME>true</SPLITTED_CLASS_NAME>
+      <LEVELS>
+        <LEVEL>TYPE</LEVEL>
+        <LEVEL>METHOD</LEVEL>
+        <LEVEL>FIELD</LEVEL>
+      </LEVELS>
+      <VISIBILITIES>
+        <VISIBILITY>DEFAULT</VISIBILITY>
+        <VISIBILITY>PROTECTED</VISIBILITY>
+        <VISIBILITY>PUBLIC</VISIBILITY>
+      </VISIBILITIES>
+    </GENERAL>
+    <TEMPLATES>
+      <CLASSES>
+        <CLASS>
+          <KEY>.+</KEY>
+          <VALUE>/**\n
+ * @author Reebu Mukherjee\n
+ */</VALUE>
+        </CLASS>
+      </CLASSES>
+      <CONSTRUCTORS>
+        <CONSTRUCTOR>
+          <KEY>.+</KEY>
+          <VALUE>&quot;&quot;</VALUE>
+        </CONSTRUCTOR>
+      </CONSTRUCTORS>
+      <METHODS />
+      <FIELDS />
+    </TEMPLATES>
+  </component>
+</project>

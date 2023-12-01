@@ -27,7 +27,8 @@ public class NoOFSubsetsSumK {
         if (dp[i][k] != -1)
             return dp[i][k];
         int pick = 0, notPick = 0;
-        if (k >= arr[i]) pick = findNoOfSubsets(i - 1, k - arr[i], arr, dp);
+        if (k >= arr[i])
+            pick = findNoOfSubsets(i - 1, k - arr[i], arr, dp);
         notPick = findNoOfSubsets(i - 1, k, arr, dp);
 
         return dp[i][k] = pick + notPick;

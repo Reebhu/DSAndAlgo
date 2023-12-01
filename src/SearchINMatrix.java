@@ -16,7 +16,6 @@ public class SearchINMatrix {
 		int possibleColNum = findClosest(matrix[possibleRowNum], target);
 		System.out.println(possibleColNum);
 		return matrix[possibleRowNum][possibleColNum] == target;
-
 	}
 
 	// Returns element closest to target in arr[]
