@@ -1,6 +1,6 @@
 package String;
 
-public class Main {
+public class StringJustify {
 
 	public static final String SPACE = "#";
 
@@ -32,7 +32,7 @@ public class Main {
 
 			while (i <= words.length - 1 && characterCount + getCharacterCount(words[i]) < maxWidth) {
 				stringBuilder.append(words[i]);
-				stringBuilder.append(" ");
+				stringBuilder.append(SPACE);
 				characterCount += getCharacterCount(words[i]) + 1;
 				i++;
 			}

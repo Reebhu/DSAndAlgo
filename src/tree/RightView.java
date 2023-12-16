@@ -10,6 +10,13 @@ import java.util.List;
 public class RightView {
 
 	public static void main(String[] args) {
+
+		/*
+		 *       1
+		 *     2   3
+		 *      5     4
+		 *
+		 * */
 		TreeNode tree = new TreeNode(1, new TreeNode(2, null, new TreeNode(5)), new TreeNode(3, null, new TreeNode(4)
 		));
 		System.out.println(new RightView().rightSideView(tree));

@@ -13,10 +13,13 @@ public class LIS {
 			return 0;
 		}
 
-		int len = findLIS(index + 1, prev, arr);
+		int pick = 0;
+		int notpick = findLIS(index + 1, prev, arr);
+
 		if (prev == -1 || arr[index] > arr[prev])
-			len = Math.max(1 + findLIS(index + 1, index, arr), len);
-		return len;
+			pick = 1 + findLIS(index + 1, index, arr);
+
+		return Math.max(pick, notpick);
 	}
 
 	static int findLisTab(int[] arr) {

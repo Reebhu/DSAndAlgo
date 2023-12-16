@@ -1,6 +1,6 @@
-package producer_consumer;
+package multithread.producer_consumer;
 
-import producer_consumer.broker.QueueBroker;
+import multithread.producer_consumer.broker.QueueBroker;
 
 public class Subscriber implements Runnable {
 	QueueBroker broker;

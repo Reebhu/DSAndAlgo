@@ -1,4 +1,4 @@
-package producer_consumer.broker;
+package multithread.producer_consumer.broker;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
