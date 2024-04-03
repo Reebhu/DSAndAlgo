@@ -1,3 +1,5 @@
+package String;
+
 public class OneAway {
     /*There are 3 edits possible insert, replace and remove.
     FInd if two strings are 1 or 0 edit away.
