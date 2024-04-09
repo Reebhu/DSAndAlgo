@@ -18,7 +18,7 @@ public class MinimumFallingPathSum {
 
         int min = Integer.MIN_VALUE;
         for (int j = 0; j < m; j++) {
-            min = Math.max(min, solve(n, m, grid));
+            min = Math.min(min, solve(n, m, grid));
         }
         return min;
     }
